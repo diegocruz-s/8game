@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(90deg, #5c3f64 0, #4a2f5e 25%, #321f59 50%, #0a1254 75%, #000550 100%);}
+.container{
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 1.2em;
+    position: relative;
+    border: 2px solid rgba(111, 214, 245, 0.5);
+}
+.element-game{
+    background-color: transparent;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    color: #ccc;
+    border-radius: 15px;
+    transition: all .3s;
+    border: 1px solid rgba(111, 214, 245, 0.3);
+}
+.element-game:hover{
+    border-color: rgba(111, 214, 245, 0.7);
+    cursor: pointer;
+}
+.gameOver{
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: rgba(20,20,20,.5);
+    border: 1px solid #fff;
+    position: absolute;
+    z-index: 100;
+    display: none;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.gameOver h1{
+    color: #ccc;
+}
+.gameOver button, .initialScreen button{
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 15px;
+    border: none;
+    color: #ccc;
+    background-color: #707070;
+    transition: .3s;
+}
+.gameOver button:hover, .initialScreen button:hover{
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #505050;
+}
+.initialScreen{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    z-index: 100;
+    background-color: rgba(20,20,20,.8);
+    border-radius: 15px;
+    color: rgba(28, 43, 253, .8);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.initialScreen h1 span{
+    border: 1px solid #000550;
+    display: inline-block;
+    color: #2c34aa;
+    text-align: center;
+    width: 1em;
+    height: 1.2em;
+    border-radius: 10px;
+    margin-left: 30px;
+    transition: .3s;
+}
+.initialScreen h1 span:hover{
+    background-color: #0a1254;
+    color: #ccc;
+    cursor: pointer;
+}   
+.divHowPlay{
+    color: #ccc;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    z-index: 100;
+    background-color: rgba(20,20,20,.95);
+    border-radius: 15px;
+    display: none;
+    word-break: break-all;
+}
+.active{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+.divHowPlay button{
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background-color: rgb(172, 2, 2);
+    border-radius: 5px;
+    transition: .3s;
+    border: none;
+    align-self: end;
+    margin: 30px;
+}
+.divHowPlay button:hover{
+    background-color: #f00;
+    cursor: pointer;
+}
+.divHowPlay p{
+    font-size: 18px;
+}
+.divHowPlay .divExampleWin{
+    display: flex;
+}
+.divHowPlay .divExampleWin .exampleWin{
+    width: 5em;
+    height: 5em;
+    margin: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #4952d4;
+}
+.divHowPlay .p2{
+    font-size: 12px;
+    margin: .5em;
+    text-align: center;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imgs/8img.png" type="image/x-icon">
+    <title>8Game</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="initialScreen">
+            <h1>Jogo dos 8 <span class="howPlay">?</span></h1>
+            <button class="start">Começar</button>
+        </div>
+
+        <div class="divHowPlay">
+            <button class="removeHowPlay">X</button>
+            <p>Deixa os quadrados numerados para vencer</p>
+            
+            <div class="divExampleWin">
+                <div class="firstElements">
+                    <div class="exampleWin">1</div>
+                    <div class="exampleWin">4</div>
+                    <div class="exampleWin">7</div>
+                </div>
+                <div class="secondElements">
+                    <div class="exampleWin">2</div>
+                    <div class="exampleWin">5</div>
+                    <div class="exampleWin">8</div>
+                </div>
+                <div class="lastElements">
+                    <div class="exampleWin">3</div>
+                    <div class="exampleWin">6</div>
+                </div>
+            </div>
+           
+            <p class="p2">Ao clicar em um quadrado ele se move para a posição vazia se ele conseguir realizar esse movimento</p>
+        </div>
+
+        <div id="p1" class="element-game"></div>
+        <div id="p2" class="element-game"></div>
+        <div id="p3" class="element-game"></div>
+        <div id="p4" class="element-game"></div>
+        <div id="p5" class="element-game"></div>
+        <div id="p6" class="element-game"></div>
+        <div id="p7" class="element-game"></div>
+        <div id="p8" class="element-game"></div>
+
+        <div class="gameOver">
+            <h1>Parabéns, você conseguiu!!!</h1>
+            <button class="playAgain">Jogar novamente</button>
+        </div>
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
