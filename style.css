@@ -24,7 +24,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 45px;
+    font-size: 2em;
     color: #ccc;
     border-radius: 15px;
     transition: all .3s;
